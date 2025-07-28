@@ -1,85 +1,59 @@
-> [!CAUTION]
-> The only official places to download Bloxstrap are this GitHub repository and [bloxstraplabs.com](https://bloxstraplabs.com). Any other websites offering downloads or claiming to be us are not controlled by us.
+# Veloxstrap
 
-<p align="center">
-    <img src="https://github.com/bloxstraplabs/bloxstrap/raw/main/Images/Bloxstrap-full-dark.png#gh-dark-mode-only" width="420">
-    <img src="https://github.com/bloxstraplabs/bloxstrap/raw/main/Images/Bloxstrap-full-light.png#gh-light-mode-only" width="420">
-</p>
+**Veloxstrap: The swift, customizable launcher for Roblox.**
 
-<div align="center">
+Veloxstrap is a high-performance, open-source launcher for Roblox, designed to enhance your gameplay with powerful features and customizations not found in the standard client. As a fork of the acclaimed Bloxstrap project, Veloxstrap is built for speed, stability, and a personalized user experience.
 
-[![License][shield-repo-license]][repo-license]
-[![GitHub Workflow Status][shield-repo-workflow]][repo-actions]
-[![Crowdin][shield-crowdin-status]][crowdin-project]
-[![Downloads][shield-repo-releases]][repo-releases]
-[![Version][shield-repo-latest]][repo-latest]
-[![Discord][shield-discord-server]][discord-invite]
-[![lol][shield-tenor-meme]][tenor-gif]
+---
 
-</div>
+## Key Features
 
-----
+*   🚀 **Unlock Your Frame Rate:** Go beyond the default 60 FPS cap for exceptionally smooth gameplay.
+*   🎨 **Custom Themes:** Personalize the Roblox interface with your own unique themes.
+*   💬 **Discord Rich Presence:** Show your current Roblox activity on your Discord profile.
+*   🌍 **Server Location Checker:** Instantly see the region of the server you're connected to.
+*   🔊 **Sound & Mod Support:** Easily restore classic sounds (like the "oof" death sound) and apply other custom file modifications.
+*   🛠️ **Fast Flag Editor:** A user-friendly interface to safely enable or disable experimental Roblox features.
 
-Bloxstrap is a third-party replacement for the standard Roblox bootstrapper, providing additional useful features and improvements.
+---
 
-Running into a problem or need help with something? [Check out the Wiki](https://github.com/bloxstraplabs/bloxstrap/wiki). If you can't find anything, or would like to suggest something, please [submit an issue](https://github.com/bloxstraplabs/bloxstrap/issues).
+## Installation
 
-Bloxstrap is only supported for PCs running Windows.
+Getting started with Veloxstrap is simple:
 
-## Frequently Asked Questions
+1.  Go to the **[Releases page](https://github.com/YOUR_USERNAME/Veloxstrap/releases)**.
+2.  Download the latest `Veloxstrap-vX.X.X.exe` installer.
+3.  Run the downloaded file. Veloxstrap will automatically set itself up and will launch whenever you join a Roblox game.
 
-**Q: Is this malware?**
+---
 
-**A:** No. The source code here is viewable to all, and it'd be impossible for us to slip anything malicious into the downloads without anyone noticing. Just be sure you're downloading it from an official source. The only two official sources are this GitHub repository and [bloxstraplabs.com](https://bloxstraplabs.com).
+## Building from Source
 
-**Q: Can using this get me banned?**
+If you wish to build Veloxstrap from the source code, you will need:
 
-**A:** No, it shouldn't. Bloxstrap doesn't interact with the Roblox client in the same way that exploits do. [Read more about that here.](https://github.com/bloxstraplabs/bloxstrap/wiki/Why-it's-not-reasonably-possible-for-you-to-be-banned-by-Bloxstrap)
+*   **Visual Studio 2022** (with the ".NET desktop development" workload).
+*   The latest **.NET 8 SDK**.
 
-## Features
+**Steps:**
 
-- Hassle-free Discord Rich Presence to let your friends know what you're playing at a glance
-- Simple support for modding of content files for customizability (death sound, mouse cursor, etc)
-- See where your server is geographically located (courtesy of [ipinfo.io](https://ipinfo.io))
-- Ability to configure graphics fidelity and UI experience
+1.  Clone this repository to your local machine:
+    ```sh
+    git clone https://github.com/YOUR_USERNAME/Veloxstrap.git
+    ```
+2.  Open the `Veloxstrap.sln` solution file in Visual Studio.
+3.  Right-click the solution in the Solution Explorer and select "Build Solution".
+4.  The compiled executable will be available in the `bin/` directory.
 
-## Installing
-Download the [latest release of Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/releases/latest), and run it. Configure your preferences if needed, and install. That's about it!
+---
 
-Alternatively, you can install Bloxstrap via [Winget](https://winstall.app/apps/pizzaboxer.Bloxstrap) by running this in a Command Prompt window:
-```
-> winget install bloxstrap
-```
+## Disclaimer
 
-You will also need the [.NET 6 Desktop Runtime](https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=win11-x64&apphost_version=6.0.16&gui=true). If you don't already have it installed, you'll be prompted to install it anyway. Be sure to install Bloxstrap after you've installed this.
+Veloxstrap is a third-party application and is not created by, affiliated with, or endorsed by Roblox Corporation. While Veloxstrap is designed to be safe and compliant with Roblox's Terms of Service by not modifying the game in a way that gives an unfair advantage, you use it at your own risk.
 
-It's not unlikely that Windows Smartscreen will show a popup when you run Bloxstrap for the first time. This happens because it's an unknown program, not because it's actually detected as being malicious. To dismiss it, just click on "More info" and then "Run anyway".
+---
 
-Once installed, Bloxstrap is added to your Start Menu, where you can access the menu and reconfigure your preferences if needed.
+## Credits and License
 
-## Code
+Veloxstrap is a fork of the fantastic **[Bloxstrap](https://github.com/pizzaboxer/bloxstrap)** project, created by **pizzaboxer**. All credit for the original concept and core functionality goes to him and the Bloxstrap contributors.
 
-Bloxstrap uses the [WPF UI](https://github.com/lepoco/wpfui) library for the user interface design. We currently use and maintain our own fork of WPF UI at [bloxstraplabs/wpfui](https://github.com/bloxstraplabs/wpfui).
-
-
-[shield-repo-license]:  https://img.shields.io/github/license/bloxstraplabs/bloxstrap
-[shield-repo-workflow]: https://img.shields.io/github/actions/workflow/status/bloxstraplabs/bloxstrap/ci-release.yml?branch=main&label=builds
-[shield-repo-releases]: https://img.shields.io/github/downloads/bloxstraplabs/bloxstrap/latest/total?color=981bfe
-[shield-repo-latest]:   https://img.shields.io/github/v/release/bloxstraplabs/bloxstrap?color=7a39fb
-
-[shield-crowdin-status]: https://badges.crowdin.net/bloxstrap/localized.svg
-[shield-discord-server]: https://img.shields.io/discord/1099468797410283540?logo=discord&logoColor=white&label=discord&color=4d3dff
-[shield-tenor-meme]:     https://img.shields.io/badge/mom_made-pizza_rolls-orange
-
-[repo-license]:  https://github.com/bloxstraplabs/bloxstrap/blob/main/LICENSE
-[repo-actions]:  https://github.com/bloxstraplabs/bloxstrap/actions
-[repo-releases]: https://github.com/bloxstraplabs/bloxstrap/releases
-[repo-latest]:   https://github.com/bloxstraplabs/bloxstrap/releases/latest
-
-[crowdin-project]: https://crowdin.com/project/bloxstrap
-[discord-invite]:  https://discord.gg/nKjV3mGq6R
-[tenor-gif]:       https://media.tenor.com/FIkSGbGycmAAAAAd/manly-roblox.gif
-
-## Code signing policy
-
-Thanks to [SignPath.io](https://signpath.io/) for providing a free code signing service, and the [SignPath Foundation](https://signpath.org/) for providing the free code signing certificate.
+This project is distributed under the **MIT License**. See the `LICENSE` file for more details.
